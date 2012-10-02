@@ -2,4 +2,4 @@
 
 Ateliers
 
-Semaine 1 - Configuration de Netbeans, Introduction au JSON
+[Semaine 1 - Configuration de Netbeans, Introduction au JSON](https://github.com/alexcp/inf2015/blob/master/1.md)
