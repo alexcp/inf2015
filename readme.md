@@ -13,3 +13,4 @@
 * Semaine 4 - Correction
 * Semaine 5 - Refactoring
 * [Semaine 5 - Code](https://github.com/alexcp/inf2015---refactoring)
+* Semaine 6 - Aide pour le DDC#1 (Pas de nouveau contenu)
