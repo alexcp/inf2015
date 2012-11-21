@@ -13,8 +13,9 @@
 * [ Semaine 5 - Refactoring ](https://github.com/alexcp/inf2015/blob/master/4.md)
 * [Semaine 5 - Code](https://github.com/alexcp/inf2015---refactoring)
 * Semaine 6 - Aide pour le DDC#1 (Pas de nouveau contenu)
-* [Semaine 7](https://github.com/alexcp/inf2015/blob/master/5.md) - Test Unitaire avec JUnit4
+* [Semaine 7 - Test Unitaire avec JUnit4](https://github.com/alexcp/inf2015/blob/master/5.md) 
 * [Semaine 7 - Code](https://github.com/alexcp/labo-junit)
+* [Semaine 8 - Test Unitaire suite](https://github.com/alexcp/inf2015/blob/master/6.md)
 
 ## Ressources
 * [Email](mailto:alexcp.com@gmail.com)
