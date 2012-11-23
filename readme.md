@@ -16,6 +16,7 @@
 * [Semaine 7 - Test Unitaire avec JUnit4](https://github.com/alexcp/inf2015/blob/master/5.md) 
 * [Semaine 7 - Code](https://github.com/alexcp/labo-junit)
 * [Semaine 8 - Test Unitaire suite](https://github.com/alexcp/inf2015/blob/master/6.md)
+* [Semaine 8 - code ](https://github.com/alexcp/inf2015---tdd-example)
 
 ## Ressources
 * [Email](mailto:alexcp.com@gmail.com)
