@@ -84,3 +84,21 @@ Copier les fichier dans les dossiers correspondant.
 Supprimer tout les dossiers et fichiers maintenant inutiles. (D'ou l'importance de faire un commit avant cette étape)
 
 Tester si tout fonctionne avec la commande `mvn package`
+
+## Couverture de test
+[Lien pour installer le plugin](http://plugins.netbeans.org/plugin/38945/unit-tests-code-coverage-plugin-updated-for-netbeans-7-0)
+
+Installer le plugin dans Netbeans et ajoutez ceci dans votre fichier pom.xml
+```xml
+<reporting>
+  <plugins>
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>cobertura-maven-plugin</artifactId>
+      <version>2.4</version>
+    </plugin>
+  </plugins>
+</reporting>
+```
+
+Faites un clique droit sur votre projet, choisissez Code Coverage > Show Reports.. et Run All Test
