@@ -1,8 +1,8 @@
 # XML, Java et Netbeans
 
-Le XML est souvent utiliser dans l'API de site web, il est parcontre de plus en plus remplacé par le json.
+Le XML est souvent utilisé dans l'API de site web.
 
-On va créer un programme qui va nous donner les derniers tweets d'une utilisateur sur twitter.
+On va créer un programme qui va nous donner les derniers tweets d'un utilisateur sur twitter.
 
 Les informations sur l'API de twitter son disponible [ici](https://dev.twitter.com/docs)
 
@@ -13,22 +13,17 @@ L'application que nous allons créer va prendre en argument le nom d'un usager s
 Cliquez sur File -> Java -> Java Application
 Entrez les détails du projet et cliquez sur Finish
 
-## Arguments
+## Le Main
 
-On peu passé des arguments à un programme Java quand on l'exécute depuis la ligne de commande.
-Les arguments sont passés a notre main. Par défauts, ils se retrouvent dans un array de String nommé args.
+La méthode main d'un programme Java prends un tableau de String en arguments.
+Ce tableau contient les arguments qu'on passe au programme lors de l'exécution depuis la ligne de commande.
 
 Avec netbeans, on peut définir ces arguments dans les propriétés de notre projet sous l'onglet Run.
 
 Pour exécuter un projet netbeans depuis la ligne de commande, d'abord, faites un Clean Build.
 Diriger vous ensuite dans le dossier de votre projet et exécuter `java -jar dist/nom_du_projet.jar`
 
-## Le Main
-
-La méthode main d'un programme Java prends un tableau de String en arguments.
-Ce tableau contient les arguments qu'on passe au programme lors de l'éxecution depuis la ligne de commande.
-
-Nous allons commencer par créer une méthode constuireUrl pour construire l'url depuis lequel nous allons récuperer les données.
+Nous allons commencer par créer une méthode constuireUrl pour construire l'url depuis lequel nous allons récupérer les données.
 Voici l'url en question: [https://api.twitter.com/1/statuses/user_timeline.xml?screen_name=alexcp_&count=5](https://api.twitter.com/1/statuses/user_timeline.xml?screen_name=alexcp_&count=5)
 
     public static String constuireUrl(String screenName){
@@ -38,7 +33,7 @@ Voici l'url en question: [https://api.twitter.com/1/statuses/user_timeline.xml?s
         return url;
     }
 
-Nous allons assigné url retourné à une variable dans notre main comme ceci.
+Nous allons assigner l'url retourné à une variable dans notre main comme ceci:
 
     public static void main(String[] args) {
         String url = constuireUrl(args[0]);
@@ -47,7 +42,7 @@ Nous allons assigné url retourné à une variable dans notre main comme ceci.
 ## Lecture du xml
 
 Pour la lecture du xml, on va se créer une classe DocumentXml avec une variable d'instance privée de type Document.
-Nous devons également importer 2 bibliotheques.
+Nous devons également importer 2 bibliothèques.
 
       import org.w3c.dom.*;
       import javax.xml.parsers.*;
@@ -56,12 +51,12 @@ Nous devons également importer 2 bibliotheques.
           private Document document;
       }
 
-La variable document va contenir une interprétation du fichier xml. Pour faire ça, on peu utiliser la méthode [DocumentBuilder.parse(url)](http://docs.oracle.com/javase/7/docs/api/javax/xml/parsers/DocumentBuilder.html#parse(java.lang.String))
-(Cette méthode peu également prendre un fichier ou un inputstream en paramêtre)
+La variable document va contenir une interprétation du fichier xml. Pour faire ça, on peut utiliser la méthode [DocumentBuilder.parse(url)](http://docs.oracle.com/javase/7/docs/api/javax/xml/parsers/DocumentBuilder.html#parse(java.lang.String))
+(Cette méthode peut également prendre un fichier ou un inputstream en paramêtre)
 
 Pour pouvoir utiliser cette méthode nous devons créer un instance de DocumentBuilder, mais pour ce faire, nous devons utiliser un [DocumentBuilderFactory](http://docs.oracle.com/javase/7/docs/api/javax/xml/parsers/DocumentBuilderFactory.html#newDocumentBuilder())
 
-Je vais créer un méthode qui va me retourner le document interpreté comme ceci:
+Je vais créer une méthode qui va me retourner le document interprété comme ceci:
 
       private Document obtenirLeContenuDeLurl(String url) throws Exception{
           DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -71,13 +66,13 @@ Je vais créer un méthode qui va me retourner le document interpreté comme cec
 
 Veuillez notez que je ne gère pas les exceptions.
 
-Je peu maintenant appeler cette méthode depuis mon constructeur.
+Je peux maintenant appeler cette méthode depuis mon constructeur.
 
     public DocumentXml(String url) throws Exception{
         this.document = obtenirLeContenuDeLurl(url);
     }
 
-Le contenu des tweets ce trouve dans la balise "text", le fichier xml est formatté comme ceci:
+Le contenu des tweets se trouvent dans la balise "text", le fichier xml est formaté comme ceci:
 
     <statuses type="array">
       <status>
@@ -100,7 +95,7 @@ On va commencer par créer une méthode pour récupérer tout les "status".
     }
 
 Cette méthode nous retourne un "NodeListe", une liste de balise.
-Pour chaque élément dans la liste, nous allons appeller la méthode obtenirTexteDeLElement.
+Pour chaque élément dans la liste, nous allons appeler la méthode obtenirTexteDeLElement.
 Comme ceci:
 
     DocumentXml xml = new DocumentXml(url);
