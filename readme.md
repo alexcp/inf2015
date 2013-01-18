@@ -2,6 +2,7 @@
 
 ### Ateliers
 * Labo 1 - Introduction au xml et à Netbeans
+* [twitter api](https://github.com/alexcp/inf2015--twitter-api)
 
 ## Ressources
 * [Email](mailto:alex@alexcp.com)
