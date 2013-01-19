@@ -1,6 +1,6 @@
 # INF2015 Développement de logiciel dans un environnement Agile
 
-### Ateliers
+## Ateliers
 
 ####Labo 1 - Introduction au xml et à Netbeans
 * [Notes](https://github.com/alexcp/inf2015/blob/master/1_xml_java_netbeans.md)
