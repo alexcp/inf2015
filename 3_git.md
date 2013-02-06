@@ -5,27 +5,35 @@
 * [Site officiel](http://git-scm.com)
 * [Try git](http://try.github.com/)
 * [Pro-git](http://git-scm.com/book)
+* [A visual git reference](http://marklodato.github.com/visual-git-guide/index-en.html)
 * [Git - The simple guide](http://rogerdudler.github.com/git-guide/)
 * [Github help](https://help.github.com/)
 * [Ma configuration](https://github.com/alexcp/gitconfig)
 
-## Introduction à Git
 
 Commencez par [installez git](http://git-scm.com/downloads)
 
-On va créer un nouveau dossier et on va s'y diriger dans un terminal (commande cd).
+## Commandes de base
+Ensuite, ouvrez le git bash si vous êtes sur windows ou ouvrez un terminal si vous êtes sur mac ou linux.
 
-Pour créer un répertoire git dans le dossier courrant, exécuté la commande
+On va créer un nouveau dossier et on va s'y diriger dans un terminal.
+
+`pwd` vous indique le répertoire courant, `cd` permet de vous dirigez vers un répertoire différent et la commande
+`mkdir` vous permet de créer un nouveau dossier vide.
+
+Pour créer un nouveau répertoire git dans le dossier courrant, exécuté la commande
 `git init`
 
-On va créer un fichier readme.md on va y inscrire `Labo git` sur la première ligne.
-L'extension `.md` signifie Markdown, un format textuel qui peut être converti en html.
+On va créer un fichier readme.md `touch readme.md` et on va y inscrire `Labo git` sur la première ligne.
+L'extension `.md` signifie Markdown, un format textuel qui peut être converti en html et qui est reconnu par github.
 
 Avec la commande status, on peut voir l'état actuel de notre repository
 `git status`
 
-On va ajouter notre fichier readme
+On va ajouter notre fichier readme au 'stage' comme ceci:
 `git add readme.md`
+
+Dans le 'stage' il y a tout les fichiers / modifications qui seront inclues dans le prochain commit.
 
 Si on refais la commande git status, les fichiers en vert représentent les fichiers qui vont être ajouté à notre prochain commit.
 `git status`
@@ -67,7 +75,7 @@ Lorsque vous êtes prêt à appliquer vos changements utilisé les 2 commandes s
             git merge dev
           ```
 
-### Quoi faire si une erreur se produit?
+### Quoi faire si une erreur ce produit?
 
 * Pour modifier le dernier commit, faîtes vos modifications et au lieu d'utiliser la commande `git commit` on utilise plutôt `git commit --ammend`
 * Pour récupérer un fichier supprimer/modifier par un commit vous pouvez utiliser la commande `git checkout sha -- nom_du_fichier`
@@ -76,13 +84,13 @@ Lorsque vous êtes prêt à appliquer vos changements utilisé les 2 commandes s
 
 ### Conseils
 
-* Utilisez la ligne de commande
+* Apprenez à utilisez git depuis la ligne de commande
 * Faites __beaucoup__ de commits
 * Faites des petits commits qui changent une seule fonctionnalité
-* Utilisez le flag `-p` pour faire des commit propre
-* Travaillez dans des branches autres que le _master_
+* Pour choisir les changement à inclure dans un fichier, utilisé la commande `git add nom_du_fichier -p`
+* Travaillez dans des branches autres que le _master_ et faites vos 'merge' seulement quand votre code fonctionne parfaitement dans votre branche
 * Faites toujours un pull avant de commencer à travailler
 * Faites des push régulièrement pour que votre équipe sache ce que vous avez fait
-* Faites un `git diff` ou un `git diff --cached` avant de faire un commit
+* Faites un `git diff` ou un `git diff --cached` avant de faire un commit pour consulter les modification en détails
 * Utilisez Git sur __TOUT__ vos projets
 
