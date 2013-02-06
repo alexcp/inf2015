@@ -11,6 +11,17 @@
 * [Notes](https://github.com/alexcp/inf2015/blob/master/2_xml_java_suite.md)
 * [Le code écrit en classe](https://github.com/alexcp/inf2015--twitter-api)
 
+####Labo 3 - Git
+* [Notes](https://github.com/alexcp/inf2015/blob/master/3_git.md)
+* [Site officiel](http://git-scm.com)
+* [Try git](http://try.github.com/)
+* [Pro-git](http://git-scm.com/book)
+* [A visual git reference](http://marklodato.github.com/visual-git-guide/index-en.html)
+* [Git - The simple guide](http://rogerdudler.github.com/git-guide/)
+* [Github help](https://help.github.com/)
+* [Ma configuration](https://github.com/alexcp/gitconfig)
+
+
 ## Ressources
 
 * [Email](mailto:alex@alexcp.com)
