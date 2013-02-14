@@ -21,6 +21,9 @@
 * [Github help](https://help.github.com/)
 * [Ma configuration](https://github.com/alexcp/gitconfig)
 
+####Labo 4 - JUnit 4
+* [Notes](https://github.com/alexcp/inf2015/blob/master/4_junit.md)]
+* [exercice](https://github.com/alexcp/inf2015-junit4)
 
 ## Ressources
 
