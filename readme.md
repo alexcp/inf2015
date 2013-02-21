@@ -22,8 +22,11 @@
 * [Ma configuration](https://github.com/alexcp/gitconfig)
 
 ####Labo 4 - JUnit 4
-* [Notes](https://github.com/alexcp/inf2015/blob/master/4_junit.md)]
+* [Notes](https://github.com/alexcp/inf2015/blob/master/4_junit.md)
 * [exercice](https://github.com/alexcp/inf2015-junit4)
+
+####Labo 5 - TDD
+* [Notes](https://github.com/alexcp/inf2015/blob/master/5_tdd.md)
 
 ## Ressources
 
