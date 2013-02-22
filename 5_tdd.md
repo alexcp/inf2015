@@ -76,4 +76,6 @@ Voici quelque exemple de Matcher:
       assertThat(string, not(containsString("difficile")));
 ```
 
+[Liste des Matchers](http://www.jarvana.com/jarvana/view/org/hamcrest/hamcrest-library/1.2.1/hamcrest-library-1.2.1-javadoc.jar!/org/hamcrest/Matchers.html)
+
 [Code présenté en classe](https://github.com/alexcp/inf2015_tdd)
