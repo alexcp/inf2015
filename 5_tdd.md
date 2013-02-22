@@ -75,3 +75,5 @@ Voici quelque exemple de Matcher:
       assertThat(string, containsString("tests"));
       assertThat(string, not(containsString("difficile")));
 ```
+
+[Code présenté en classe](https://github.com/alexcp/inf2015_tdd)
