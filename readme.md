@@ -33,6 +33,9 @@
 * [Notes](https://github.com/alexcp/inf2015/blob/master/6_json.md)
 * [Code présenté en classe](https://github.com/alexcp/labo_json)
 
+####Labo 7 - Maven
+* [Notes](https://github.com/alexcp/inf2015/blob/master/7_maven.md)
+
 
 ## Ressources
 
