@@ -29,6 +29,11 @@
 * [Notes](https://github.com/alexcp/inf2015/blob/master/5_tdd.md)
 * [Code présenté en classe](https://github.com/alexcp/inf2015_tdd)
 
+####Labo 6 - JSON
+* [Notes](https://github.com/alexcp/inf2015/blob/master/6_json.md)
+* [Code présenté en classe](https://github.com/alexcp/labo_json)
+
+
 ## Ressources
 
 * [Email](mailto:alex@alexcp.com)
